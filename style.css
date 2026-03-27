@@ -142,7 +142,7 @@ section { padding: 140px 60px; }
   text-transform: uppercase;
   color: var(--gold);
   margin-bottom: 24px;
-  opacity: 0;
+  opacity: 1;
   animation: fadeUp 0.8s 0.2s forwards;
 }
 .hero-h1 {
@@ -152,7 +152,7 @@ section { padding: 140px 60px; }
   line-height: 0.95;
   letter-spacing: -0.02em;
   margin-bottom: 36px;
-  opacity: 0;
+  opacity: 1;
   animation: fadeUp 0.9s 0.4s forwards;
 }
 .hero-h1 em {
@@ -167,12 +167,12 @@ section { padding: 140px 60px; }
   max-width: 420px;
   margin-bottom: 52px;
   letter-spacing: 0.02em;
-  opacity: 0;
+  opacity: 1;
   animation: fadeUp 0.9s 0.6s forwards;
 }
 .btn-group {
   display: flex; gap: 18px; align-items: center;
-  opacity: 0;
+  opacity: 1;
   animation: fadeUp 0.9s 0.75s forwards;
 }
 .btn {
@@ -207,7 +207,7 @@ section { padding: 140px 60px; }
 .hero-scroll {
   position: absolute; bottom: 40px; right: 60px;
   display: flex; flex-direction: column; align-items: center; gap: 10px;
-  opacity: 0;
+  opacity: 1;
   animation: fadeIn 1s 1.2s forwards;
 }
 .scroll-line {
@@ -259,7 +259,7 @@ section { padding: 140px 60px; }
   display: flex;
   gap: 20px;
   align-items: baseline;
-  opacity: 0;
+  opacity: 1;
   transform: translateX(20px);
   transition: opacity 0.5s, transform 0.5s;
 }
@@ -329,7 +329,7 @@ section { padding: 140px 60px; }
   position: absolute;
   inset: 0;
   background: linear-gradient(135deg, rgba(201,160,86,0.06) 0%, transparent 60%);
-  opacity: 0;
+  opacity: 1;
   transition: opacity 0.35s;
 }
 .bento-card:hover { background: #1f1f1f; }
@@ -382,7 +382,7 @@ section { padding: 140px 60px; }
   font-size: 2rem;
   margin-bottom: 20px;
   display: block;
-  opacity: 0.7;
+  opacity: 1;
 }
 
 /* ─── HOW IT WORKS ─── */
@@ -640,21 +640,21 @@ footer {
 
 /* ─── ANIMATIONS ─── */
 @keyframes fadeUp {
-  from { opacity: 0; transform: translateY(28px); }
+  from { opacity: 1; transform: translateY(28px); }
   to   { opacity: 1; transform: translateY(0); }
 }
 @keyframes fadeIn {
-  from { opacity: 0; }
+  from { opacity: 1; }
   to   { opacity: 1; }
 }
 @keyframes scrollPulse {
-  0%, 100% { opacity: 0.3; transform: scaleY(0.6); }
+  0%, 100% { opacity: 1; transform: scaleY(0.6); }
   50%       { opacity: 1;   transform: scaleY(1); }
 }
 
 /* ─── REVEAL ON SCROLL ─── */
 .reveal {
-  opacity: 0;
+  opacity: 1;
   transform: translateY(32px);
   transition: opacity 0.7s ease, transform 0.7s ease;
 }
